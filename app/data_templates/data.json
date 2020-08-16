@@ -1,0 +1,43 @@
+{
+  "cases": {
+    "total_cases": "",
+    "total_deaths": "",
+    "total_tested": ""
+  },
+  "hospitalized": {
+    "total_hospitalized": "",
+    "total_in_icu": ""
+  },
+  "ventilators": {
+    "ventilators_available": "",
+    "ventilators_in_use": ""
+  },
+  "hospital_capacity": {
+    "adult_icu_beds_available": "",
+    "adult_icu_beds_total": "",
+    "adult_non_icu_beds_available": "",
+    "adult_non_icu_beds_total": "",
+    "pediatric_icu_beds_available": "",
+    "pediatric_icu_beds_total": ""
+  },
+  "operation_status": {
+    "operation_status_ecc": "",
+    "operation_status_esf8": ""
+  },
+  "esf": {
+    "esf_8_health_medical": "",
+    "esf_hospital_tf": "",
+    "esf_long_term_care_tf": "",
+    "esf_ems_tf": "",
+    "esf_6_mass_care": ""
+  },
+  "inventory": {
+    "inventory_yesterday": [],
+    "shipped_out": [],
+    "inventory_today": [],
+    "scheduled_allocations": [],
+    "projected_eod": [],
+    "total_received": []
+  },
+  "last_updated": ""
+}

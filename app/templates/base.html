@@ -1,0 +1,37 @@
+<html>
+<head>
+    {% if title %}
+    <title>{{ title }} - ORCoV19</title>
+    {% else %}
+    <title>ORCoV19 Management</title>
+    {% endif %}
+</head>
+<body>
+<div>
+    ORCoV19:
+    {% if current_user.is_anonymous %}
+    <a href="{{ url_for('login')}}">Login</a>
+    {% else %}
+    <a href="{{ url_for('logout') }}">Logout</a>
+    {% endif %}
+</div>
+<hr>
+<div>
+    <a href="{{ url_for('admin') }}">Admin</a> |
+    <a href="{{ url_for('logs') }}"> Data Logs</a> |
+</div>
+<hr>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+</div>
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>

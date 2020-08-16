@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{title}}</h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div  style="display: inline-block">
+        New <br>
+        {{ form.data(rows='50', cols='90') }} <br>
+        {{ form.submit_new() }}
+    </div>
+
+    <div style="display: inline-block">
+        Staging <br>
+        <textarea rows="50" cols="90" readonly style="background-color: lightgrey">{{ staging }}</textarea><br>
+        {{ form.promote() }}
+    </div>
+    <div style="display: inline-block">
+        Production <br>
+        <textarea rows="50" cols="90" readonly style="background-color: lightgrey">{{ production }}</textarea><br>
+        {{ form.copy_prod_to_new(disabled=True) }}
+    </div>
+
+    <br>
+
+</form>
+{% endblock %}

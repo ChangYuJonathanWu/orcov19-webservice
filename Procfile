@@ -1,0 +1,1 @@
+web: gunicorn -w 4 orcov19-ws:app

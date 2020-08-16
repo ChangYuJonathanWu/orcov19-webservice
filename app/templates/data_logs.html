@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{title}}</h1>
+<div style="display: inline-block">
+    Staging Environment<br>
+    {% for id in staging_ids %}
+        <a href={{url_for('log_by_environment_id', environment="staging", log_id=id)}}>{{ id }}</a><br>
+    {% endfor %}
+</div>
+<div style="display: inline-block">
+    Production Environment<br>
+    {% for id in production_ids %}
+        <a href={{url_for('log_by_environment_id', environment="production", log_id=id)}}>{{ id }}</a><br>
+    {% endfor %}
+</div>
+{% endblock %}

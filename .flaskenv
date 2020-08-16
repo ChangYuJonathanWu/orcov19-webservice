@@ -1,0 +1,1 @@
+FLASK_APP=orcov19-ws.py
