@@ -8,7 +8,7 @@ The backend aggressively caches "good data" in-memory due to data sources being 
 changing and being unavailable. 
 
 Many endpoints and backend functionality are no longer in use but have been left in place to show the different approaches
-taken to adapt to highly-variable data sources and frequentl data availability issues.
+taken to adapt to highly-variable data sources and frequent data availability issues.
 
 ## Built With:
 
